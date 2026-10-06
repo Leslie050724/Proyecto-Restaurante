@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Esquina</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>La Esquina</h1>
+        <p>Restaurante de comida casera</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bienvenido</h2>
+
+            <p>
+                Disfruta de nuestra comida casera
+                preparada cada día.
+            </p>
+
+           <button id="botonMenu">Ver menú</button>
+           <button id="botonReserva">Reservar mesa</button>
+           <div id="formularioReserva" class="formulario-oculto">
+
+    <h2>🍽️ Reservar mesa</h2>
+
+    <form id="formReserva">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" min="1" max="20" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+
+        <button type="submit">Confirmar reserva</button>
+
+    </form>
+
+    <p id="mensajeReserva"></p>
+
+</div>
+           <div id="menuCompleto" class="menu-oculto">
+
+    <h2>🍽️ Nuestro menú</h2>
+
+    <div class="item-menu">
+        <span>Hamburguesa tradicional</span>
+        <strong>15 €</strong>
+    </div>
+
+    <div class="item-menu">
+        <span>Pasta boloñesa</span>
+        <strong>7 €</strong>
+    </div>
+
+    <div class="item-menu">
+        <span>Tarta de vainilla</span>
+        <strong>7 €</strong>
+    </div>
+
+</div>
+        </section>
+
+        <section>
+    <h2>Nuestros platos</h2>
+
+    <div class="platos">
+
+        <div class="plato">
+            <img src="img/hamburguesa.jpg" alt="Hamburguesa">
+            <h3>🍔 Hamburguesa</h3>
+            <p>Hamburguesa casera con patatas</p>
+            <strong>10 €</strong>
+        </div>
+
+        <div class="plato">
+            <img src="img/pizza.jpg" alt="Pizza">
+            <h3>🍕 Pizza</h3>
+            <p>Pizza artesanal hecha en casa</p>
+            <strong>12 €</strong>
+        </div>
+
+        <div class="plato">
+            <img src="img/pasta.jpg" alt="Pasta">
+            <h3>🍝 Pasta</h3>
+            <p>Pasta con salsa casera</p>
+            <strong>9 €</strong>
+        </div>
+
+    </div>
+</section>
+
+        <section>
+            <h2>Contacto</h2>
+
+            <p>📍 Agüimes, Gran Canaria</p>
+            <p>📞 600 000 000</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 La Esquina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

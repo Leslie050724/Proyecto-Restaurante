@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #3804f6;
+    color: white;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 28px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+.platos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plato {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.plato h3 {
+    margin-top: 0;
+}
+
+.plato strong {
+    font-size: 20px;
+}
+.plato img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.menu-oculto {
+    display: none;
+}
+
+.menu-visible {
+    display: block;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.item-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-menu strong {
+    font-size: 18px;
+}
+.formulario-oculto {
+    display: none;
+}
+
+.formulario-visible {
+    display: block;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+#formReserva {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formReserva input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formReserva label {
+    font-weight: bold;
+}
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fa0202;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #f1462c;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contenedor-comida {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    .formulario-visible {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+}
